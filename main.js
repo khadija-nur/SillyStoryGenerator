@@ -18,3 +18,7 @@ let radioButtons = document.getElementsByClassName("radioBtns");
 const storyText = `${name} once flew to ${randomCountry} from ${checkedCountry} with Scooby-Doo and the rest of the crew.
 ${randomName} bought souvenirs worth ${randomPrice} for the ghostbusters from Mars and aliens from Earth.`
 
+function changeStory () {
+    window.onload;
+    story.textContent = storyText;}
+changeStory();
