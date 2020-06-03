@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <title>Silly Story Generator</title>
+
+    
 </head>
 <body>
-    
+    <h1>Silly Story Generator</h1>
+    <div class="container">
+        <div class="nameInput ">
+            <label for="customName"> Add custom name below:</label>
+            <input type="text" id="customName" class="hoverEffect">  
+        </div> 
+        <div class="radioBtns">
+            <input type="radio" name="country" id="US" value="US">
+            <label for="US">US</label>
+            <input type="radio" name="country" id="UK" value="UK" checked>
+            <label for="UK">UK</label>
+        </div>
+        <div class="generator">
+            <button class="generate hoverEffect"> Generate random story</button>
+        </div>
+        <div class="pContainer">
+            <p class="story"></p>
+        </div>
+       
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
