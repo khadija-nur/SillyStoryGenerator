@@ -7,18 +7,30 @@ const content = {
     country : ["Tuvalu", "Kribati", "Niue", "Vanuatu"],
     price : "5"
 };
-let randomPrice = price = "£" + content.price;
-let name = "Chicken Noodles";
-let randomNumberOfThree = Math.floor(Math.random()*3); 
-let randomName = content.name[randomNumberOfThree];
-let randomCountry = content.country[randomNumberOfThree];
-let checkedCountry = document.querySelector('input[name = country]:checked').value;
-let radioButtons = document.getElementsByClassName("radioBtns");
 
-const storyText = `${name} once flew to ${randomCountry} from ${checkedCountry} with Scooby-Doo and the rest of the crew.
-${randomName} bought souvenirs worth ${randomPrice} for the ghostbusters from Mars and aliens from Earth.`
+generateBtn.addEventListener ('click', result = () => {
+    let randomPrice = price = "£" + content.price;
+    let name ;
+    console.log(customName)
+    let randomNumberOfThree = Math.floor(Math.random()*3); 
+    let randomName = content.name[randomNumberOfThree];
+    let randomCountry = content.country[randomNumberOfThree];
+    let checkedCountry = document.querySelector('input[name = country]:checked').value;
 
-function changeStory () {
-    window.onload;
-    story.textContent = storyText;}
-changeStory();
+    const storyText = `${name} once flew to ${randomCountry} from ${checkedCountry} with Scooby-Doo and the rest of the crew.
+    ${randomName} bought souvenirs worth ${randomPrice} for the ghostbusters from Mars and aliens from Earth.`
+
+    if (customName.value !== ''){
+        name = customName.value;
+        console.log(name)
+    }
+    name = "Chicken Noodles";
+    console.log(name)
+    if (document.getElementById("US").checked){
+        randomPrice = "$" + content.price
+    }
+    story.textContent = storyText;
+
+});
+
+// changeStory();
